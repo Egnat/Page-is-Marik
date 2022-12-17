@@ -1,0 +1,694 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+margin: 0px;/*нужно прописывать сразу, до токо, как начал прописывать стили элементам*/
+padding: 0px;/*или не ставить вообще иначе, когда стили элементам выставлены уже и прописать эту фишку, стили в некоторых элементах нужно будет менять*/
+}
+
+::-webkit-scrollbar {
+  width : 0.1px; 
+  height: 5px;
+  pacity: 0.02;
+} /* УБРАЛ ПОЛОСУ ПРОКРУТКИ С ЭКРАНА и сделал свою. 
+Когда пишу сайт, чтобы на планшете отображалось содержимое от края до края страницы 
+без зазоров, прокрутку можно отключить. И включить для красоты по готовности сайта.*/
+
+::-webkit-scrollbar-button {height: 50px; background :#42e10e; }  /*2 - кнопка*/  
+
+::-webkit-scrollbar-track {background: #274dd7; }  /*3 - трек */ 
+
+::-webkit-scrollbar-track-piece { background: #e91e63;}  /*4 - видимая часть трека */ 
+
+::-webkit-scrollbar-thumb {background: #fbe100; border-radius: 10px;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /*inset 1 3 13px rgb(207 10 10 / 64%)*/} /*5 - ползунок */ 
+
+/*настраивает полосу прокрутки с помощью вэбкит. С этими еще не разобрался*/
+
+/*::-webkit-scrollbar{ width: 22px; } /*1 - вертикальный скроллбар*/
+
+/*::-webkit-scrollbar:horizontal{ height: 22px;  }  /*1 - горизонтальный скроллбар*/
+
+/*::-webkit-scrollbar-button {background :#e50845; }  /*2 - кнопка*/  
+
+/*::-webkit-scrollbar-track {background: #008000; }  /*3 - трек */ 
+
+/*::-webkit-scrollbar-track-piece { background: #32CD32;}  /*4 - видимая часть трека */ 
+
+/*::-webkit-scrollbar-thumb {background: #322e76; border-radius: 10px;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); } /*5 - ползунок */ 
+
+/*::-webkit-scrollbar-corner {: #32CD32; }  6 - уголок */
+
+/*::-webkit-resizer { : #32CD32; } 7 - изменение размеров*/ 
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-image: url('https://www.chitalnya.ru/upload3/435/f56a1bdcaefa1a422fa0b8eccd786382.gif');
+  ackground-image: url('https___www.lifeofpix.com_wp-content_uploads_2022_11_image00007-rotated');
+  background-size: cover;
+  verflow: hidden;/*убирает полностью прокрутку с экрана*/
+  -webkit-resizer: /*— изменение размеров*/
+}
+
+.header { }
+
+.garland-1 {
+position: absolute;
+width: 1235px;
+height: 123px;
+left: 31px;
+z-index: 1;   
+}
+
+.filterGarlandeUndeHeader {
+-webkit-filter: grayscale(4%) contrast(59%) opacity(0.7); /*эффекты можно комбинировать*/   
+}
+
+.GarlandeUndeHeader {
+width: 1280px;
+height: 326px;
+}
+
+.h1 {
+position: absolute;
+width: 1236px;
+top: 190px;
+left: 30px;
+
+font-family: "Pacifico", cursive;
+font-size: 67px;
+color: #ffc30e;
+}
+
+.numbers { color: #0177df; }
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(67% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flyingSanta {
+position: absolute;
+/*animation-duration: 100s;*/ /*регулируется быстрота и медлительность движения при включенном js*/
+/*animation-name: mymove;*/
+top: 83px;
+-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;/*регулируется быстрота и медлительность движения*/
+/*animation-delay: 500s;время через сколько запустится анимация*/
+/*animation: mymove 75s infinite; 
+/*animation-iteration-count: mymove ; /*сколько раз сработает, но пока не работает*/ 
+}
+/*@keyframes mymove {
+from { left:0px; }
+to { left:927px; } /*ставим размер экрана, чтобы гугл исчезал если нужно*
+}*/
+
+.Santa {
+width: 200p;
+height: 100px;/*ширину и высоту  тоже можно устанавливать, самой картинке, не блоку*/
+}
+
+.filterGarlandNealyIframeMarik {
+position: absolute;
+height: 650px;
+top: 367px;
+left: 109px;
+border-radius: 125px;
+box-shadow: 0px 0px 29px 29px #00a1ff;
+}
+
+.garlandNealyIframeMarik {
+width: 1084px;
+height: 650px;
+border-radius: 125px;
+}
+
+.blockIframeCoca {
+position: absolute;
+top: 424px;
+left: 180px;
+}
+
+.filterVinokChristmas {
+position: absolute;
+width: 191px;
+height: 191px;
+top: 1953px;
+right: 948p;
+background-image: url(http://3rebenka.ru/wp-content/uploads/nygif/Advent107.gif);
+background-size: cover;
+z-index: 2;
+}
+
+.iframeCoca {
+width: 935px;
+height: 526px;
+border: 5px solid #f5deb3;  
+background-size: cover; 
+box-shadow: 0px 0px 17px 26px rebeccapurple;
+}
+
+.filterGarlendeIframe {
+position: absolute;
+top: -120px;
+left: -98px;
+z-index: 1;
+ackground-image: url(https://cdn.imgbb.ru/user/37/370436/201811/4205ddb39f8b81f7d72c7ef4fc28bad9.gif);
+ackground-size: cover;
+}
+
+.garlende2 {
+width: 1138px;
+height: 65px;
+}
+
+.blockPhotoMarik {
+position: absolute;
+height: 452p;
+top: 1222px;
+left: 340px;
+}
+
+.filterNewYearTree {
+position: absolute;
+height:667px;
+top: 12px;
+right: 687px;
+background-color: #fff8dc;
+z-index: 1;
+box-shadow: 0px 0px 9px 19px #d90bc0;
+}
+
+.NewYearTree {
+width: 236px;
+height: 570px;
+border: 1px solid #ff0;
+}
+
+.filterCap {
+position: absolute;
+width: 100px;
+height: 100px;
+top: 54px;
+left: 256px;
+background-image: url(https://friendfunction.ru/local/assets/img/secret-santa.png);
+background-size: cover;
+z-index: 1;
+}
+
+.filteronePhotoMarik {
+height: 452px;
+border-radius: 76px;
+box-shadow: 0px 0px 27px 26px #58ff74;
+filter: brightness(0.8);
+}
+
+.onePhotoMarik {
+width: 618px;
+height: 452px;
+border-radius: 75px;
+}
+
+.filterShowMan {
+position: absolute;
+width: 223px;
+height: 359px;
+bottom: 45px;
+left: 674px;
+background-image: url(http://3rebenka.ru/wp-content/uploads/nygif/snowman.gif);
+background-size: cover;
+}
+
+.filterGarlendeblockOneVideos {
+position: absolute;
+right: -322px;
+bottom: 503px;
+z-index: 1;
+}
+
+.garlende3 {
+width: 1273px;
+height: 80px;
+}
+
+.block_falling-gifts {
+position: absolute;
+top: 1647px;
+left: 49px;
+z-index: 1;
+}
+
+.falling-giftsOne {
+position: absolute;
+width: 215px;
+height: 234px;
+}
+
+.falling-giftsTwo {
+position: absolute;
+width: 118px;
+bottom: 70px;
+left: 720px;
+}
+
+.falling-giftsThree {
+position: absolute;
+width: 224px; 
+height: 297px;
+bottom: 144p;  
+left: 945px;
+}
+
+.falling-giftsFor {
+position: absolute;
+width: 325px;
+height: 247px;
+top: 52px;   
+left: 397px;
+}
+
+.filterGarlandeOnSlider {
+position: absolute;
+top: 1946px;
+z-index: 1;
+}
+
+.garlandeOnSlider, .garlandBottomSlider {
+width: 1280px;
+height: 68px;
+}
+
+.filterSock {
+position: absolute;
+top: 1962px;
+left: 1177px;
+ackground-image: url(https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/8344/christmas-stocking-clipart-sm.png);
+ackground-size: cover;
+z-index: 1;
+}
+
+.sock {
+width: 100px;
+height: 198px;
+}
+
+.filterGarlandLeftSlider {
+position: absolute;  
+top: 2376px;
+right: 812px;
+transform: rotate(452deg);
+ackground-image: url(https://i.ibb.co/mcVYTXc/27.gif);/*лучше поставить имж в штмл*/
+ackground-size: cover;
+}
+
+.filterGarlandRightSlider {
+position: absolute;  
+top: 2376px;
+left: 822px;
+transform: rotate(270deg);
+}
+
+.garlandLeftSlider {
+height: 99px;
+}
+
+.garlandRightSlider {
+height: 99px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.filterGarlandBottomSlider {
+position: absolute;  
+top: 2821px;
+transform: rotate(180deg);  
+}
+
+.filterGarlandeNealySlider {
+position: absolute;
+bottom: -1947px;
+left: 165px;   
+}
+
+.garlandeNealySlider {
+width: 979px;
+height: 801px;
+border-radius: 125px;
+}
+
+.sliderWrapFlex {
+position: absolute;
+display: flex;
+width: 764px;
+height: 572px;
+top: 2135px;
+left: 269px;
+box-shadow: 0px 0px 199px 28px beige;
+}
+
+#slides{
+position: absolute;
+width: 764px;
+height: 572px;
+padding: 0px;
+border: 2px solid #ffae00;
+margin: 0px; 
+text-align: center;
+list-style-type: none;    
+}
+
+.controls {
+position: absolute;
+width: 201px;
+height: 37px;
+top: 641px;
+left: 291px;
+outline: none;
+border: 4px solid #13dd13;
+background-color: #8a2be2;
+cursor: pointer;
+
+font-family: 'Yeseva One';
+font-size: 18px;
+font-style: italic;
+line-height: 25px;
+text-align: center;
+color: white;
+}
+
+.slide{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0px;
+left: 0px;
+opacity: 0;
+z-index: 1;
+
+-webkit-transition: opacity 1s;
+-moz-transition: opacity 1s;
+-o-transition: opacity 1s;
+transition: opacity 1s;
+}
+
+.showing{
+opacity: 1;
+z-index: 2;
+}
+
+.slide{
+padding: 40p;
+ackground: #333;
+font-size: 40px;
+box-sizing: border-box;
+color: #fff;
+}
+
+slide:nth-of-type(1){
+  ackground: url(images/IMG_20220521_134457.jpg) no-repeat;/*так тоже можно делать, но нужно подстривать слайдер*/
+  ackground-size: cover;
+}
+slide:nth-of-type(2){
+  ackground: orange;
+}
+slide:nth-of-type(3){
+  background: green;
+}
+slide:nth-of-type(4){
+  background: blue;
+}
+slide:nth-of-type(5){
+  background: purple;
+}
+
+slide:nth-of-type(6){
+  background: purple;
+}
+
+slide:nth-of-type(7){
+  background: purple;
+}
+
+slide:nth-of-type(8){
+  background: purple;
+}
+
+.filter_img {filter: brightness(0.7);}
+
+.imagesSlide {
+width: 764px;
+height:572px;/*в этом слайдере я добавил имж в ли, в штмли, можно сделать у фотки меньше высоту и прописать бэкграунд slide:nth-of-type(8), будет внизу полоска, где можно красиво оформить текст*/
+}
+
+.number {
+position: absolute;
+bottom: 0px;
+}
+
+.h1h1 {
+position: absolute;
+right: 895px;
+bottom: 182px;
+color: darkred;
+z-index: 1;   
+    
+font-family: "Nunito Sans", cursive/*, Arial, sans-serif*/;
+}
+
+.filteronePhotoMarikFooter {
+position: absolute;
+height: 884px;
+top: 2944px;
+box-shadow: 0px -21px 55px 23px #fbae01;
+filter: brightness(0.8);
+}
+
+.PhotoMarikFooter {
+width: 1280px;
+height: 938px;
+}
+
+.footer {
+position: absolute;
+width: 1280px;
+top: 3881px;
+background-color: #b1754b8f;
+z-index: 1;
+ext-align: center;/*нужен если будет h1, h2, p*/ 
+/*-webkit-filter: grayscale(100%) contrast(150%) opacity(0.3); /*эффекты можно комбинировать тонируется все содержимое футера, z-index не помогает для растанировки */
+}
+
+.text-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #e3b873;
+
+font-size:31px;
+list-style-type: none;
+font-family: "Pacifico", cursive/*"Nunito Sans", Arial, sans-serif*/;
+font-style: normal;
+font-weight: bold;
+ine-height: 0px;
+list-style: none;/*Убирает точки у ли*/
+text-decoration-line: none;
+}
+
+.letters {
+padding-right: 38p; /*падинг не нужен, просто justify-content: space-between;, потому что вверху поставил * {margin: 0;position: 0;}*/
+text-decoration-line: none; /*в панориуме нужен, потому что *{margin,pading} вверху не ставил*/
+}
+
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1024px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(83% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flyingSanta {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+
+.filterGarlandeNealySlider{bottom: -2031px;}
+.filterGarlandLeftSlider {right: 563px;}
+}
+
+@media screen and (max-width: 800px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(102% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flyingSanta {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}  
+
+.filterGarlandeNealySlider{bottom: -1548px;}
+.filterGarlandLeftSlider {right: 329px;}
+}
+
+@media screen and (max-width: 768px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(112% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flyingSanta {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+
+.filterGarlandeNealySlider{bottom: -2031px;}
+.filterGarlandLeftSlider {right: 290px;}
+}
+
+@media screen and (max-width: 425px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(202% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flyingSanta {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+}
+
+.filterGarlandeNealySlider{bottom: -2031px;}
+.filterGarlandLeftSlider {right: -50px;}
+}
+
+@media screen and (max-width: 375px) {
+
+@-webkit-keyframes mymove {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(226% - 100px);/*85% регулируют длину движения элемента*/
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.flyingSanta {
+position: absolute;
+top: 44px;
+z-index: 2;
+-webkit-animation: linear infinite;
+-webkit-animation-name: mymove;
+-webkit-animation-duration: 75s;
+} 
+.filterGarlandeNealySlider{bottom: -2031px;}
+.filterGarlandLeftSlider {right: -94px;}
+}
