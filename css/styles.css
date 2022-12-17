@@ -360,7 +360,7 @@ width: 764px;
 height: 572px;
 top: 2135px;
 left: 269px;
-box-shadow: 0px 0px 199px 28px beige;
+ox-shadow: 0px 0px 199px 28px beige;
 }
 
 #slides{
@@ -369,6 +369,7 @@ width: 764px;
 height: 572px;
 padding: 0px;
 border: 2px solid #ffae00;
+box-shadow: 0px -4px 80px 52px #f5deb396;
 margin: 0px; 
 text-align: center;
 list-style-type: none;    
