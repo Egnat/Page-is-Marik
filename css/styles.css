@@ -421,8 +421,8 @@ box-sizing: border-box;
 color: #fff;
 }
 
-slide:nth-of-type(1){
-  ackground: url(images/IMG_20220521_134457.jpg) no-repeat;/*так тоже можно делать, но нужно подстривать слайдер*/
+/*slide:nth-of-type(1){
+  ackground: url(images/IMG_20220521_134457.jpg) no-repeat;/*так тоже можно делать, но нужно подстривать слайдер*
   ackground-size: cover;
 }
 slide:nth-of-type(2){
@@ -448,7 +448,7 @@ slide:nth-of-type(7){
 
 slide:nth-of-type(8){
   background: purple;
-}
+}*/
 
 .filter_img {filter: brightness(0.7);}
 
@@ -543,7 +543,7 @@ text-decoration-line: none; /*в панориуме нужен, потому ч�
 
 .flyingSanta {
 position: absolute;
-top: 44px;
+top: 87px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -578,7 +578,7 @@ z-index: 2;
 
 .flyingSanta {
 position: absolute;
-top: 44px;
+top: 84px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -613,7 +613,7 @@ z-index: 2;
 
 .flyingSanta {
 position: absolute;
-top: 44px;
+top: 84px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -648,7 +648,7 @@ z-index: 2;
 
 .flyingSanta {
 position: absolute;
-top: 44px;
+top: 81px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
@@ -683,7 +683,7 @@ z-index: 2;
 
 .flyingSanta {
 position: absolute;
-top: 44px;
+top: 77px;
 z-index: 2;
 -webkit-animation: linear infinite;
 -webkit-animation-name: mymove;
